@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 
-@TeleOp(name="F_TeleOp")
+@TeleOp(name="One_TeleOp")
 public class SSMTest1 extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException {

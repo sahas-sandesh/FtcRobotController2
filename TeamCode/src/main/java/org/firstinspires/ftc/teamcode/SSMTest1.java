@@ -11,13 +11,16 @@ public class SSMTest1 extends LinearOpMode {
     public void runOpMode() throws InterruptedException {
         //Initialization Code
         DcMotor SSMmotorOne;
-        SSMmotorOne = hardwareMap.get(DcMotor.class,"SSMmotorOne")
-
+        DcMotor SSMmotorTwo;
+        SSMmotorOne = hardwareMap.get(DcMotor.class,"SSMmotorOne");
+        SSMmotorTwo = hardwareMap.get(DcMotor.class,"SSMmotorTwo");
         waitForStart();
 
         while(opModeIsActive()){
-            double speed = gamepad1.left_stick_x;
-            SSMmotorOne.setPower(speed);
+            double speedleft = gamepad1.left_stick_y;
+            SSMmotorOne.setPower(speedleft);
+            double speedright = gamepad1.right_stick_y;
+            SSMmotorTwo.setPower(speedright);
         }
     }
 }

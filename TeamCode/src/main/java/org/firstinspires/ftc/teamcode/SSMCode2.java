@@ -10,7 +10,7 @@ public class SSMCode2 extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException {
         //Initialization Code
-<<<<<<< HEAD
+
         DcMotor FL;
         DcMotor FR;
         DcMotor BL;
@@ -27,7 +27,7 @@ public class SSMCode2 extends LinearOpMode {
             FR.setPower(speed);
             BL.setPower(speed*-1);
             BR.setPower(speed*-1);
-=======
+
         DcMotor SSMmotor1;
         DcMotor SSMmotor2;
         DcMotor SSMmotor3;
@@ -44,7 +44,7 @@ public class SSMCode2 extends LinearOpMode {
             SSMmotor2.setPower(speed);
             SSMmotor3.setPower(speed);
             SSMmotor4.setPower(speed);
->>>>>>> origin/master
+
 
         }
     }

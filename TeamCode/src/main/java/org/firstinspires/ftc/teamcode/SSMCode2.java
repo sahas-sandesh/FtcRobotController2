@@ -22,13 +22,11 @@ public class SSMCode2 extends LinearOpMode {
         waitForStart();
 
         while(opModeIsActive()){
-            double speed = gamepad1.left_stick_x;
-            FL.setPower(speed);
-            FR.setPower(speed*-1);
-            BL.setPower(speed);
-            BR.setPower(speed*-1);
-
-
+            double speedright = gamepad1.left_stick_x;
+            FL.setPower(speedright);
+            FR.setPower(speedright*-1);
+            BL.setPower(speedright);
+            BR.setPower(speedright*-1);
 
 
         }

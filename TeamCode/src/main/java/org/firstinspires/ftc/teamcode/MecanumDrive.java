@@ -12,10 +12,10 @@ public class MecanumDrive extends LinearOpMode {
         DcMotor backLeftMotor;
         DcMotor backRightMotor;
         // Initialize the hardware.
-        frontLeftMotor = hardwareMap.get(DcMotor.class, "frontLeftMotor");
-        frontRightMotor = hardwareMap.get(DcMotor.class, "frontRightMotor");
-        backLeftMotor = hardwareMap.get(DcMotor.class, "backLeftMotor");
-        backRightMotor = hardwareMap.get(DcMotor.class, "backRightMotor");
+        frontLeftMotor = hardwareMap.get(DcMotor.class, "FL");
+        frontRightMotor = hardwareMap.get(DcMotor.class, "FR");
+        backLeftMotor = hardwareMap.get(DcMotor.class, "BL");
+        backRightMotor = hardwareMap.get(DcMotor.class, "BR");
 
         // Set the motors to the correct direction.
         frontLeftMotor.setDirection(DcMotor.Direction.FORWARD);
